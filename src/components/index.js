@@ -1,2 +1,3 @@
-export { default as Button } from "./ui/Button";
-export { default as header } from "./header";
+export { Button } from "./ui/Button";
+export { Header } from "./header";
+export { default as Skill } from "./skill/Skill";
