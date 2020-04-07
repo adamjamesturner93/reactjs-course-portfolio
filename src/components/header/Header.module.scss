@@ -1,0 +1,39 @@
+.header {
+    padding: 20px 10px;
+    background-color: #333333;
+    color: #e6e6e6;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    a {
+        color: currentColor;
+        text-decoration: none;
+    }
+
+    .nav_links {
+        display: flex;
+        list-style: none;
+
+        li {
+            padding: 0 15px;
+        }
+
+        a:hover {
+            border-bottom: 2px solid;
+        }
+    }
+
+   &__big_title {
+        font-size: xx-large!important;
+
+        &__red {
+            color: red!important;
+        }
+   }
+}
