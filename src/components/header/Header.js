@@ -1,8 +1,8 @@
 import React from "react";
 import * as styles from "./Header.module.scss";
+import { NavLink } from "react-router-dom";
 
-// 2. Your Name top left - link
-// 3. 3 links - top right : about, skills and contact
+// 1315
 
 // <a href="/" className={`${styles.header__big_title} ${styles.header__big_title__red}`}><span>Adam Turner</span></a>
 // <a href="/" className={[styles.header__big_title, styles.header__big_title__red].join(' ')}><span>Adam Turner</span></a>
@@ -10,19 +10,38 @@ import * as styles from "./Header.module.scss";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <a href="/" className={styles.header__title}>
+      <NavLink to="/" className={styles.header__title}>
         <span>Adam Turner</span>
-      </a>
+      </NavLink>
       <nav>
         <ul className={styles.nav_links}>
           <li>
-            <a href="/">About</a>
+            <NavLink
+              activeClassName={styles.active}
+              className={styles.link}
+              to="/"
+              exact
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="/">Skills</a>
+            <NavLink
+              className={styles.link}
+              activeClassName={styles.active}
+              to="/skills"
+            >
+              Skills
+            </NavLink>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <NavLink
+              className={styles.link}
+              activeClassName={styles.active}
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
