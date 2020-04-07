@@ -2,15 +2,12 @@ import React from "react";
 import * as styles from "./App.module.scss";
 
 import { Header } from "./components/header";
-import image from "./assets/ADA_AdamTurner_Professional _small.jpg";
+import image from './assets/ADA_AdamTurner_Professional _small.jpg';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      visible: true,
-    };
-  }
+  state = {
+    visible: true,
+  };
 
   render() {
     return (
